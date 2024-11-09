@@ -1,9 +1,45 @@
 <style>
-  .image-gallery {margin-left: -1%!important;}
-  .image-gallery li {float: left; display: block; margin: 0 0 -8% 1%; width: 19%;}
-  .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
-  .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
-  .image-gallery li a img {width: 100%; display: block; border-radius: 12px;}
+  .image-gallery {
+    margin: 0 auto !important;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .image-gallery li {
+    flex: 0 0 19%;
+    margin-bottom: -62px;
+  }
+
+  .image-gallery li a {
+    text-align: center;
+    text-decoration: none!important;
+    color: #777;
+    display: block;
+    width: 100%;
+  }
+
+  .image-gallery li a span {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 3px 0;
+  }
+
+  .image-gallery li a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
 
   .image-overlay {
     display: none;
@@ -17,6 +53,7 @@
     align-items: center;
     z-index: 9999;
   }
+
   .image-overlay img {
     min-width: 25%;
     min-height: 25%;
@@ -26,6 +63,33 @@
     border-radius: 5px;
   }
 
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .image-gallery li {
+      flex: 0 0 24%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-gallery li {
+      flex: 0 0 32%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .image-gallery {
+      gap: 2%;
+    }
+    
+    .image-gallery li {
+      flex: 0 0 48%;
+    }
+
+    .image-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  }
 </style>
 
 <div class="image-overlay" id="imageOverlay">
@@ -39,7 +103,7 @@
     {{- $imageurl := printf "%s/%s" $dir .Name -}}
     {{- $imagetitle := index (split .Name ".") 0 -}}
     <li>
-      <a href="javascript:void(0)" onclick=" showImageOverlay(' {{ $image.RelPermalink }} ') ">
+      <a href="javascript:void(0)" onclick="showImageOverlay('{{ $image.RelPermalink }}')">
         <img src="{{ ($image.Fill "300x300 q50").Permalink }}">
       </a>
     </li>
