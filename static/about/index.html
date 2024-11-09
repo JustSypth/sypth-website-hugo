@@ -136,30 +136,45 @@
       </header>
       <main>
         
-  <div class="mx-auto mb-2 mt-12 flex max-w-screen-xl flex-col items-center justify-center">
+<style>
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column !important;
+    }
     
-    
-    
-    
-    
+    .gif-wrapper {
+      margin-left: 0 !important;
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
 
+    .gif-wrapper img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+    }
+  }
+</style>
+
+<div class="mx-auto mb-2 mt-12 flex max-w-screen-xl flex-col items-center justify-center">
   
-  </div>
+  
+  
+</div>
 
-<div class="flex flex-row justify-between items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 50px; padding-right: 50px;">
-
-
+<div class="content-container flex flex-row justify-between items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 50px; padding-right: 50px;">
   
   <div class="flex flex-col items-start">
     
     
-  
-  <div class="justify-left mx-auto mt-8 flex max-w-screen-lg px-4">
-    <article>
-      
-        <h1 class="mb-4 text-4xl font-extrabold text-slate-700 dark:text-slate-200">About me</h1>
-        <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
-          <ul>
+    <div class="justify-left mx-auto mt-8 flex max-w-screen-lg">
+      <article>
+        
+          <h1 class="mb-4 text-4xl font-extrabold text-slate-700 dark:text-slate-200">About me</h1>
+          <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
+            <ul>
 <li><strong>Age:</strong> 16</li>
 <li><strong>Country:</strong> Slovakia</li>
 <li><strong>Linux distro I&rsquo;m currently using:</strong> Fedora (KDE)</li>
@@ -167,22 +182,34 @@
 <li><strong>Cats are kool</strong></li>
 </ul>
 
-        </span>
-      
-    </article>
-  </div>
-
+          </span>
+        
+      </article>
+    </div>
   </div>
 
   
-
-  <div class="flex items-center justify-center ml-4">
+  <div class="gif-wrapper flex items-center justify-center ml-4">
     <img src="/cat.gif" alt="Moving GIF" class="h-48 w-48" style="border-radius: 16px; width: 350px; height: 450px;"/>
   </div>
-  
-  
-
 </div>
+
+<script>
+  function handleResize() {
+    const container = document.querySelector('.content-container');
+    const gifWrapper = document.querySelector('.gif-wrapper');
+    
+    if (window.innerWidth <= 768) {
+      container.appendChild(gifWrapper);
+    }
+  }
+
+  
+  handleResize();
+
+  
+  window.addEventListener('resize', handleResize);
+</script>
 
       </main>
     </div>
