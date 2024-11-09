@@ -1,0 +1,71 @@
+############################
+## Author
+############################
+
+author:
+  name: "Cat jumpscare!!"
+  image: cat.png
+  greeting: "Hii and welcome to my new website!"
+  # icon: ""
+
+############################
+## Links
+############################
+
+links:
+  - github: https://github.com/JustSypth
+  # - gitlab: 
+  # - facebook: https://github.com/chrede88/qubt
+  - twitter: https://x.com/JustSypth
+  - roblox: https://www.roblox.com/users/243332854/profile
+  # - mastodon:
+  # - linkedin: https://github.com/chrede88/qubt
+  # - instagram: https://github.com/chrede88/L1nkr
+  # - reddit: 
+  # - telegram: 
+  # - whatsapp: 
+  # - signal: 
+  # - codepen: 
+  # - dev: 
+  # - email: sypth@sypth.xyz
+  # - website: https://x.com/JustSypth
+  # - link: 
+  # - discord:
+  # - orcid:
+  # - slack:
+  # - stack-overflow: 
+  # - twitch: 
+  # - patreon: 
+  # - soundcloud:
+  # - dribbble: 
+  # - stack-exchange: 
+  # - tiktok: 
+  # - youtube:
+  # - keybase: 
+  # - flickr: 
+  # - tumblr:
+  # - kickstarter: 
+  # - snapchat:
+  # - bluesky: 
+  # - bitbucket:
+  # - bandcamp: 
+  # - etsy: 
+  # - spotify: 
+  # - pinterest: 
+  # - strava: 
+  # - untappd: 
+  # - skype: 
+  # - medium: 
+  # - foursquare: 
+  # - apple: 
+  # - amazon: 
+  # - google: 
+  # - paypal: 
+  # - windows: 
+
+###############################
+## OpenGraph & Twitter Cards
+###############################
+
+title: "@Sypth"
+description: "My cool website I've made"

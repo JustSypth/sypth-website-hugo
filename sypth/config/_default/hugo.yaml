@@ -1,0 +1,15 @@
+############################
+## CHANGE THESE
+############################
+
+
+title: "Sypth's Website"
+
+############################
+## MISC
+############################
+
+enableEmoji: true
+disableKinds: ['taxonomy', 'term']
+languageCode: 'en-us'
+enableRobotsTXT: true

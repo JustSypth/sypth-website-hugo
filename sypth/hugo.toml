@@ -1,0 +1,6 @@
+baseURL = 'https://sypth.xyz'
+languageCode = 'en-us'
+title = "Sypth's Website"
+theme = 'qubt'
+
+

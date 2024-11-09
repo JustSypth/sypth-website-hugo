@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100%"
+   height="100%"
+   viewBox="0 0 496 496"
+   version="1.1"
+   xml:space="preserve"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+   id="svg1"
+   sodipodi:docname="bandcamp.svg"
+   inkscape:version="1.4 (e7c3feb, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1">
+        
+    
+
+</defs><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="1.136218"
+   inkscape:cx="237.1904"
+   inkscape:cy="251.2722"
+   inkscape:window-width="1920"
+   inkscape:window-height="1008"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg1" />
+    
+<path
+   id="path1"
+   style="fill-rule:nonzero"
+   d="M 248 0 C 111 0 0 111 0 248 C 0 385 111 496 248 496 C 385 496 496 385 496 248 C 496 111 385 0 248 0 z M 150.83594 79.855469 L 416.11328 150.86719 L 345.16406 416.14453 L 79.886719 345.13281 L 150.83594 79.855469 z M 220.9082 201.66992 L 201.01367 275.68555 L 275.0918 295.51953 L 294.92383 221.50391 L 220.9082 201.66992 z " /></svg>
