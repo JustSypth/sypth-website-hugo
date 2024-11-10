@@ -1,5 +1,5 @@
 ---
-type: gallery
+type: empty
 ---
 
 # Cats (they are cool)

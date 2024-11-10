@@ -1,6 +1,6 @@
 ---
 # don't change this!
-type: misc
+type: about-gif
 
 # change these
 name: "@Sypth"
@@ -12,6 +12,6 @@ bio: true
 
 - **Age:** 16
 - **Country:** Slovakia
-- **Linux distro I'm currently using:** Fedora (KDE)
+- **Linux distro I'm currently using:** [Fedora (KDE)](/rice-video "Click to see rice")
 - **Languages I know:** C#, Lua*u*, Python
 - **Cats are kool**

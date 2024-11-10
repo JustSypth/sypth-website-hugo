@@ -1,0 +1,6 @@
+{{ $dir := string (.Get "video_path") }}
+
+<video class="video-class" controls autoplay>
+    <source src="{{ $dir | relURL }}" type=video/mp4>
+</video>
+
