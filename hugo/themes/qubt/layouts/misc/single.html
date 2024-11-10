@@ -21,11 +21,6 @@
   }
 </style>
 
-<div class="mx-auto mb-2 mt-12 flex max-w-screen-xl flex-col items-center justify-center">
-  {{/* Add image and title */}}
-  {{ $name := .Params.name | default .Site.Params.Author.name }}
-  {{ $icon := .Params.icon | default .Site.Params.Author.icon }}
-</div>
 
 <div class="content-container flex flex-row justify-between items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 50px; padding-right: 50px;">
   <!-- Left content section -->
