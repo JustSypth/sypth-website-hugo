@@ -21,5 +21,12 @@
       <guid>https://sypth.xyz/gallery/</guid>
       <description>Cats (they are cool) </description>
     </item>
+    <item>
+      <title></title>
+      <link>https://sypth.xyz/rice-video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sypth.xyz/rice-video/</guid>
+      <description>Video moment </description>
+    </item>
   </channel>
 </rss>
