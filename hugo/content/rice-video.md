@@ -1,6 +1,7 @@
 ---
-type: empty
+type: video
+
+videoname: "rice.mp4"
 ---
 
 # Video moment
-{{< video video_path="rice.mp4" >}}
