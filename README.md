@@ -1,2 +1,2 @@
 # sypth-website
-The first website i've ever made
+**My first website i've ever made** (I regret doing this with a static generator)
