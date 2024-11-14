@@ -28,7 +28,7 @@
 
 
 
-<link type="text/css" rel="stylesheet" href="/css/main.bundle.min.955b22a3fcff20511a11d9c7fdac7dd57e8293ee16e4d4ca0d6ab737f4895c3017582739cfd1f17a7c3feae23b42a8f4b01d7052fa2bc03a1430fa0669bf2d60.css" integrity="sha512-lVsio/z/IFEaEdnH/ax91X6Ck&#43;4W5NTKDWq3N/SJXDAXWCc5z9Hxenw/6uI7Qqj0sB1wUvorwDoUMPoGab8tYA==" />
+<link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2f47af32d976da0a5d24efe1aacf448fc8c9fa744e4467cb69de156c00fb83348e81bf3343fed71aafcfd9dda18c65e2d650546aba45e49c69fa5b3acb98ce77.css" integrity="sha512-L0evMtl22gpdJO/hqs9Ej8jJ&#43;nRORGfLad4VbAD7gzSOgb8zQ/7XGq/P2d2hjGXi1lBUarpF5Jxp&#43;ls6y5jOdw==" />
 
 
 
@@ -45,17 +45,17 @@
 
 
 
-<meta property="og:url" content="https://sypth.xyz/rice-video/">
+<meta property="og:url" content="https://sypth.xyz/404.html">
   <meta property="og:site_name" content="Sypth&#39;s Website">
-  <meta property="og:title" content="Sypth&#39;s Website">
-  <meta property="og:description" content="Video moment ">
+  <meta property="og:title" content="404 Page not found">
+  <meta property="og:description" content="My cool website I&#39;ve made">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sypth&#39;s Website">
-  <meta name="twitter:description" content="Video moment ">
+  <meta name="twitter:title" content="404 Page not found">
+  <meta name="twitter:description" content="My cool website I&#39;ve made">
 
 
 <script>
@@ -136,41 +136,24 @@
       </header>
       <main>
         
-  
-  
-  
-  
-  
-
-  <div style="text-align: center;">
-    <article>
-      <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
-        
-      </h1>
-      <h2 class="mt-4 text-2xl text-slate-500 dark:text-slate-400">
-        
-      </h2>
-
+  <div class="mb-2 mt-24 flex flex-col items-center justify-center md:mt-48">
+    <h1 class="text-3xl font-extrabold text-slate-700 md:text-8xl dark:text-slate-200">Umm.. no.</h1>
+    <div class="m-4 flex flex-row justify-center space-x-4">
       
-
+        <a href="/" class="rounded-full bg-slate-700 px-3 py-1 text-slate-200 hover:text-indigo-500 dark:bg-slate-200 dark:text-slate-700">
+          Home
+        </a>
       
-
-      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
-        <h1 id="video-moment">Video moment</h1>
-
-      </span>
-    </article>
-  </div>
-
-  
-    <div style="display: flex; padding: 35px; justify-content: center; align-items: center;">
-
-      <video class="video-class" width="1200px" height="100%" controls autoplay>
-        <source src="/rice.mp4" type=video/mp4>
-      </video>
+        <a href="/gallery/" class="rounded-full bg-slate-700 px-3 py-1 text-slate-200 hover:text-indigo-500 dark:bg-slate-200 dark:text-slate-700">
+          Gallery
+        </a>
+      
+        <a href="/about/" class="rounded-full bg-slate-700 px-3 py-1 text-slate-200 hover:text-indigo-500 dark:bg-slate-200 dark:text-slate-700">
+          About
+        </a>
       
     </div>
-
+  </div>
 
       </main>
     </div>
@@ -185,7 +168,40 @@
   <p class="text-center text-sm text-slate-700 dark:text-slate-400">
     This is my first time doing a personal website btw.
   </p>
+  <p style="padding-top: 4px;" class="text-center text-sm text-slate-700 dark:text-slate-400">
+    Last upated: <span id="since-updated"></span> 
+  </p>
 </div>
+
+<script>
+  let jsonData; 
+  fetch("/date.json")
+    .then(response => response.json())
+    .then(data => { 
+      jsonData = data; 
+      const lastUpdated = new Date(jsonData.date); 
+      const now = new Date();
+      
+      const diffInSeconds = Math.floor((now - lastUpdated) / 1000); 
+      let timeAgo = '';
+
+      if (diffInSeconds < 60) {
+        timeAgo = `${diffInSeconds} seconds ago`;
+      } else if (diffInSeconds < 3600) {
+        const minutes = Math.floor(diffInSeconds / 60);
+        timeAgo = `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+      } else if (diffInSeconds < 86400) {
+        const hours = Math.floor(diffInSeconds / 3600);
+        timeAgo = `${hours} hour${hours > 1 ? 's' : ''} ago`;
+      } else {
+        const days = Math.floor(diffInSeconds / 86400);
+        timeAgo = `${days} day${days > 1 ? 's' : ''} ago`;
+      }
+      
+      document.getElementById("since-updated").innerText = `${timeAgo}`;
+    });
+</script>
+
 
     </footer>
   </body>

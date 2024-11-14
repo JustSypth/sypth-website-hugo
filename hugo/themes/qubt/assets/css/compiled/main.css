@@ -959,8 +959,8 @@ video {
 }
 
 .prose :where(li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 .prose :where(ol > li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -1535,7 +1535,7 @@ video {
 
 .bg-neutral-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+  background-color: rgb(225 223 227 / var(--tw-bg-opacity));
 }
 
 .bg-neutral-300 {
@@ -1628,8 +1628,8 @@ video {
 }
 
 .text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.225rem;
+  line-height: 1.70rem;
 }
 
 .text-sm {
@@ -1921,7 +1921,7 @@ video {
 
 .dark\:bg-neutral-800:is(.dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(39 36 43 / var(--tw-bg-opacity));
 }
 
 .dark\:bg-slate-200:is(.dark *) {
