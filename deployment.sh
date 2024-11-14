@@ -7,7 +7,7 @@ fi
 
 JSON_FILE="public/date.json"
 
-CURRENT_DATE=$(date +"%Y-%m-%dT%H:%M")
+CURRENT_DATE=$(TZ="Europe/Bratislava" date +"%Y-%m-%dT%H:%M")
 jq --arg new_date "$CURRENT_DATE" '.date = $new_date' "$JSON_FILE" > tmp.$$.json && mv tmp.$$.json "$JSON_FILE"
 
 rm -fr /var/www
