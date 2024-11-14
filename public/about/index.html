@@ -28,7 +28,7 @@
 
 
 
-<link type="text/css" rel="stylesheet" href="/css/main.bundle.min.955b22a3fcff20511a11d9c7fdac7dd57e8293ee16e4d4ca0d6ab737f4895c3017582739cfd1f17a7c3feae23b42a8f4b01d7052fa2bc03a1430fa0669bf2d60.css" integrity="sha512-lVsio/z/IFEaEdnH/ax91X6Ck&#43;4W5NTKDWq3N/SJXDAXWCc5z9Hxenw/6uI7Qqj0sB1wUvorwDoUMPoGab8tYA==" />
+<link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2f47af32d976da0a5d24efe1aacf448fc8c9fa744e4467cb69de156c00fb83348e81bf3343fed71aafcfd9dda18c65e2d650546aba45e49c69fa5b3acb98ce77.css" integrity="sha512-L0evMtl22gpdJO/hqs9Ej8jJ&#43;nRORGfLad4VbAD7gzSOgb8zQ/7XGq/P2d2hjGXi1lBUarpF5Jxp&#43;ls6y5jOdw==" />
 
 
 
@@ -219,7 +219,40 @@
   <p class="text-center text-sm text-slate-700 dark:text-slate-400">
     This is my first time doing a personal website btw.
   </p>
+  <p style="padding-top: 4px;" class="text-center text-sm text-slate-700 dark:text-slate-400">
+    Last upated: <span id="since-updated"></span> 
+  </p>
 </div>
+
+<script>
+  let jsonData; 
+  fetch("/date.json")
+    .then(response => response.json())
+    .then(data => { 
+      jsonData = data; 
+      const lastUpdated = new Date(jsonData.date); 
+      const now = new Date();
+      
+      const diffInSeconds = Math.floor((now - lastUpdated) / 1000); 
+      let timeAgo = '';
+
+      if (diffInSeconds < 60) {
+        timeAgo = `${diffInSeconds} seconds ago`;
+      } else if (diffInSeconds < 3600) {
+        const minutes = Math.floor(diffInSeconds / 60);
+        timeAgo = `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+      } else if (diffInSeconds < 86400) {
+        const hours = Math.floor(diffInSeconds / 3600);
+        timeAgo = `${hours} hour${hours > 1 ? 's' : ''} ago`;
+      } else {
+        const days = Math.floor(diffInSeconds / 86400);
+        timeAgo = `${days} day${days > 1 ? 's' : ''} ago`;
+      }
+      
+      document.getElementById("since-updated").innerText = `${timeAgo}`;
+    });
+</script>
+
 
     </footer>
   </body>
