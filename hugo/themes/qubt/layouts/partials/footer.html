@@ -25,10 +25,15 @@
     .then(response => response.json())
     .then(data => { 
       jsonData = data; 
-      const lastUpdated = new Date(jsonData.date); // Convert the date string to a Date object
-      const now = new Date();
       
-      const diffInSeconds = Math.floor((now - lastUpdated) / 1000); // Difference in seconds
+      // Convert the date string to a Date object, using Slovakia timezone for both times
+      const lastUpdated = new Date(jsonData.date);
+      const now = new Date().toLocaleString('en-US', { timeZone: 'Europe/Bratislava' });
+
+      // Convert the current time back to a Date object for calculations
+      const nowDate = new Date(now);
+      
+      const diffInSeconds = Math.floor((nowDate - lastUpdated) / 1000); // Difference in seconds
       let timeAgo = '';
 
       if (diffInSeconds < 60) {
@@ -47,4 +52,3 @@
       document.getElementById("since-updated").innerText = `${timeAgo}`;
     });
 </script>
-

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sypth&#39;s Website</title>
-    <link>https://sypth.xyz/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Sypth&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://sypth.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://sypth.xyz/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sypth.xyz/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description> Age: 16 Country: Slovakia Linux distro I&amp;rsquo;m currently using: Fedora (KDE) Languages I know: C#, Luau, Python Cats are kool </description>
     </item>
     <item>
       <title></title>
-      <link>https://sypth.xyz/gallery/</link>
+      <link>http://localhost:1313/gallery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sypth.xyz/gallery/</guid>
+      <guid>http://localhost:1313/gallery/</guid>
       <description>Cats (they are cool) </description>
     </item>
     <item>
       <title></title>
-      <link>https://sypth.xyz/rice-video/</link>
+      <link>http://localhost:1313/rice-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sypth.xyz/rice-video/</guid>
+      <guid>http://localhost:1313/rice-video/</guid>
       <description>Video moment </description>
     </item>
   </channel>
