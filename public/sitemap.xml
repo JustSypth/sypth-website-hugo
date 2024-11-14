@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://sypth.xyz/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/gallery/</loc>
+    <loc>https://sypth.xyz/gallery/</loc>
   </url><url>
-    <loc>http://localhost:1313/rice-video/</loc>
+    <loc>https://sypth.xyz/rice-video/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://sypth.xyz/</loc>
   </url>
 </urlset>
