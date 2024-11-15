@@ -5,10 +5,13 @@
   {{ $DPT := printf "%s - %d minute read" $date .ReadingTime }}
   {{ $toc := .Params.toc | default false }}
 
+  {{ $dir := .Params.videoname }}
+  {{ $width := .Params.width }}
+
   <div style="text-align: center;">
     <article>
-      <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
-        {{ .Title | emojify }}
+      <h1 style="font-size: 48px;" class="font-extrabold text-slate-700 dark:text-slate-200">
+        {{ $dir }}
       </h1>
       <h2 class="mt-4 text-2xl text-slate-500 dark:text-slate-400">
         {{ .Params.subtitle | emojify }}
@@ -65,10 +68,9 @@
     </article>
   </div>
 
-  {{ $dir := .Params.videoname }}
-    <div style="display: flex; padding: 35px; justify-content: center; align-items: center;">
+    <div style="display: flex; padding-top: 25px; justify-content: center; align-items: center;">
 
-      <video class="video-class" width="1200px" height="100%" controls autoplay>
+      <video class="video-class" width="{{ $width }}" height="100%" controls autoplay>
         <source src="{{ $dir | relURL }}" type=video/mp4>
       </video>
       
