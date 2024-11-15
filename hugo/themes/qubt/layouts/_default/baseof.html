@@ -2,6 +2,7 @@
 {{- $lang_code := site.LanguageCode | default "en-us" -}}
 <html lang="{{ $lang_code }}">
   <head>
+    <meta http-equiv="Cache-Control" content="no-cache">
     {{ partial "head" . }}
   </head>
   <body class="flex h-screen flex-col justify-between bg-neutral-100 dark:bg-neutral-800">
