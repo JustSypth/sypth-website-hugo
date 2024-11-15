@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sypth&#39;s Website</title>
-    <link>http://localhost:1313/</link>
+    <link>https://sypth.xyz/</link>
     <description>Recent content on Sypth&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sypth.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://sypth.xyz/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description> Age: 16 Country: Slovakia Linux distro I&amp;rsquo;m currently using: Fedora (KDE) Languages I know: C#, Luau, Python Cats are kool </description>
+      <guid>https://sypth.xyz/about/</guid>
+      <description>My age: 16 Country: Slovakia Linux distro I&amp;rsquo;m currently using: Fedora (KDE) Languages I know: C#, Luau, Python Cats are kool I recently started learning html/css/js which is the result of this website. So far it&amp;rsquo;s fun.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/gallery/</link>
+      <link>https://sypth.xyz/gallery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/</guid>
+      <guid>https://sypth.xyz/gallery/</guid>
       <description>Cats (they are cool) </description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rice-video/</link>
+      <link>https://sypth.xyz/rice-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rice-video/</guid>
+      <guid>https://sypth.xyz/rice-video/</guid>
       <description>Video moment </description>
     </item>
   </channel>
