@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div style="margin-top: 260px" class="flex flex-col items-center min-h-[100vh] pt-16">
     <h1 style="font-size: 28px;" class="font-extrabold text-slate-700 dark:text-slate-200 mb-16">
-      /home/sypth > <span style="font-weight: 200;" class="text-slate-700 dark:text-slate-400">sudo dnf update</span>
+      /home/sypth > <span id="linux-prompt" style="font-weight: 200;" class="text-slate-700 dark:text-slate-400"></span>
     </h1>
 
       <div style="margin-top: 20px;" class="flex flex-col items-center justify-center">
@@ -49,4 +49,37 @@
       </div>
     </div>
 
+<style>
+  .typed-cursor.typed-cursor--blink {
+    animation: typedjsBlink 1.2s infinite !important;
+    -webkit-animation: typedjsBlink 1.2s infinite !important;
+    animation: typedjsBlink 1.2s infinite !important;
+}
+    /* animation: typedjsBlink 0.7s infinite; */
+    /* -webkit-animation: typedjsBlink 0.7s infinite; */
+    /* animation: typedjsBlink 0.7s infinite; */
+
+</style>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script> 
+  fetch("/strings.json")
+    .then(response => response.json())
+    .then(data => { 
+      jsonData = data;
+      var typed = new Typed('#linux-prompt', {
+      strings: jsonData,
+      startDelay: 1000,
+      backDelay: 1000,
+      typeSpeed: 45,
+      backSpeed: 70,
+      shuffle: false,
+      loop: true,
+      showCursor: true,
+      cursorChar: '_',
+  });
+    })
+
+  
+</script>
 {{ end }}
