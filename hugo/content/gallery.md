@@ -1,7 +1,7 @@
 ---
 type: empty
+title: Cats
+subtitle: They are cool
 ---
-
-# Cats (they are cool)
 
 {{< image-gallery gallery_dir="/album" >}}

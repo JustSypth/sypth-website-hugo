@@ -6,12 +6,12 @@
   {{ $toc := .Params.toc | default false }}
 
 
-  <div class="justify-left mx-auto mt-8 flex max-w-screen-md px-4" style="text-align: center;">
+  <div class="justify-left mx-auto mt-2 flex max-w-screen-md px-4" style="text-align: center;">
     <article>
-      <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+      <h1 style="font-size: 48px;" class="font-extrabold text-slate-700 dark:text-slate-200">
         {{ .Title | emojify }}
       </h1>
-      <h2 class="mt-4 text-2xl text-slate-500 dark:text-slate-400">
+      <h2 class="text-2xl text-slate-500 dark:text-slate-400">
         {{ .Params.subtitle | emojify }}
       </h2>
 
