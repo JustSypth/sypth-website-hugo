@@ -14,7 +14,7 @@
 
 
 
-  <meta name="author" content="Cat jumpscare!!" />
+  <meta name="author" content="Hi I&#39;m Sypth 😺🐱" />
 
 
 
@@ -29,7 +29,7 @@
 
 
 
-<link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2f47af32d976da0a5d24efe1aacf448fc8c9fa744e4467cb69de156c00fb83348e81bf3343fed71aafcfd9dda18c65e2d650546aba45e49c69fa5b3acb98ce77.css" integrity="sha512-L0evMtl22gpdJO/hqs9Ej8jJ&#43;nRORGfLad4VbAD7gzSOgb8zQ/7XGq/P2d2hjGXi1lBUarpF5Jxp&#43;ls6y5jOdw==" />
+<link type="text/css" rel="stylesheet" href="/css/main.bundle.min.afc5281ef787a5da6f0db021f423f5afad97b38ad264087ce9c06f8030b1335b279ad22e0fa078951584598dfd8c9e2c226df80a855d2229fe0ab21503b52916.css" integrity="sha512-r8UoHveHpdpvDbAh9CP1r62Xs4rSZAh86cBvgDCxM1snmtIuD6B4lRWEWY39jJ4sIm34CoVdIin&#43;CrIVA7UpFg==" />
 
 
 
@@ -137,30 +137,28 @@
       </header>
       <main>
         
-  <div class="flex items-center justify-center">
-    <div class="mt-auto flex h-[75vh] flex-col items-center justify-center">
-      
-      
-      
-      
-      
-        
-        <div class="relative w-48">
-          <img class="mb-2 h-48 w-48 rounded-full" width="192" height="192" alt="Cat jumpscare!!" src="/cat_hu5d3231cfcf475b4bb37f142ec23f0c6e_375619_filter_13017533233524963927.webp" />
-          
-        </div>
-      
+  <div style="text-align: center; margin-top: 260px; margin-left: 28px; margin-right: 28px;" class="flex flex-col items-center justify-center min-h-[100vh] pt-16">
+    <h1 style="font-size: 28px;" class="font-extrabold text-slate-700 dark:text-slate-200 mb-16">
+      /home/sypth > <span id="linux-prompt" style="font-weight: 200;" class="text-slate-700 dark:text-slate-400"></span>
+    </h1>
 
+      <div style="margin-top: 20px;" class="flex flex-col items-center justify-center">
+        
+        
+        
+        
+        
 
       <h1 class="text-center text-4xl font-extrabold text-slate-700 dark:text-slate-200">
-        Cat jumpscare!!
+        Hi I&rsquo;m Sypth 😺🐱
       </h1>
 
       
         <h2 class="mt-4 text-center text-xl text-slate-600 dark:text-slate-400">
-          Hii and welcome to my new website!
+          Welcome to my website!
         </h2>
       
+
       <div class="mt-4 flex flex-wrap items-center justify-center">
         
           
@@ -293,7 +291,40 @@
         
       </div>
     </div>
-  </div>
+
+<style>
+  .typed-cursor.typed-cursor--blink {
+    animation: typedjsBlink 1.2s infinite !important;
+    -webkit-animation: typedjsBlink 1.2s infinite !important;
+    animation: typedjsBlink 1.2s infinite !important;
+}
+     
+     
+     
+
+</style>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script> 
+  fetch("/strings.json")
+    .then(response => response.json())
+    .then(data => { 
+      jsonData = data;
+      var typed = new Typed('#linux-prompt', {
+      strings: jsonData,
+      startDelay: 1000,
+      backDelay: 7000,
+      typeSpeed: 60,
+      backSpeed: 45,
+      shuffle: true,
+      loop: true,
+      showCursor: true,
+      cursorChar: '_',
+  });
+    })
+
+  
+</script>
 
       </main>
     </div>
@@ -306,7 +337,7 @@
   
   
   <p class="text-center text-sm text-slate-700 dark:text-slate-400">
-    This is my first time doing a personal website btw.
+    sypth@sypth.xyz
   </p>
   <p style="padding-top: 4px;" class="text-center text-sm text-slate-700 dark:text-slate-400">
     Last upated: <span id="since-updated"></span> 

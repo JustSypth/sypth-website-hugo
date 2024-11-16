@@ -22,9 +22,9 @@
 </style>
 
 
-<div class="content-container flex flex-row justify-between items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 50px; padding-right: 50px;">
+<div class="content-container flex flex-row justify-between items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 60px; padding-right: 60px;">
   <!-- Left content section -->
-  <div class="flex flex-col items-start">
+  <div style="max-width: 500px;" class="flex flex-col items-start">
     {{ with .Params.jobTitle }}
       <h2 class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400">
         {{ . | markdownify | emojify }}
@@ -45,7 +45,7 @@
 
   {{ $gif := .Params.gif }}
   <div class="gif-wrapper flex items-center justify-center ml-4">
-    <img src="{{ $gif | relURL }}" alt="Moving GIF" class="h-48 w-48" style="border-radius: 16px; width: 350px; height: 450px;"/>
+    <img src="{{ $gif | relURL }}" alt="Moving GIF" style="border-radius: 16px; width: 300px; height: 400px;"/>
   </div>
 </div>
 

@@ -12,21 +12,28 @@
       <link>https://sypth.xyz/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sypth.xyz/about/</guid>
-      <description> Age: 16 Country: Slovakia Linux distro I&amp;rsquo;m currently using: Fedora (KDE) Languages I know: C#, Luau, Python Cats are kool </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://sypth.xyz/gallery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sypth.xyz/gallery/</guid>
-      <description>Cats (they are cool) </description>
+      <description>My age: 16 Country: Slovakia Linux distro I&amp;rsquo;m currently using: Fedora (KDE) Languages I know: C#, Luau, Python Cats are kool I recently started learning html/css/js which is the result of this website. So far it&amp;rsquo;s fun.</description>
     </item>
     <item>
       <title></title>
       <link>https://sypth.xyz/rice-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sypth.xyz/rice-video/</guid>
-      <description>Video moment </description>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://sypth.xyz/what/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sypth.xyz/what/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cats</title>
+      <link>https://sypth.xyz/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sypth.xyz/gallery/</guid>
+      <description> </description>
     </item>
   </channel>
 </rss>
