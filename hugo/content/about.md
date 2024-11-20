@@ -14,6 +14,7 @@ bio: true
 - **Country:** Slovakia
 - **Linux distro I'm currently using:** [Fedora (KDE)](/rice-video "Click to see rice")
 - **Languages I know:** C#, Lua*u*, Python
+- **I'm neurodivergent (adhd)**
 - **Cats are kool**
 
 **I recently started learning html/css/js which is the result of this website. So far it's fun.**
