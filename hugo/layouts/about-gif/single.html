@@ -11,6 +11,11 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      order: 2; /* This makes the gif appear after the text */
+    }
+
+    .text-content {
+      order: 1; /* This makes the text appear before the gif */
     }
 
     .gif-wrapper img {
@@ -27,7 +32,7 @@
 
 <div class="content-container flex flex-row justify-between items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 60px; padding-right: 60px;">  
   <!-- Left content section -->
-  <div style="max-width: 500px;" class="flex flex-col items-start">
+  <div style="max-width: 500px;" class="flex flex-col items-start text-content">
     {{ with .Params.jobTitle }}
       <h2 class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400">
         {{ . | markdownify | emojify }}
@@ -50,21 +55,4 @@
     <img src="{{ $gif | relURL }}" alt="Moving GIF" style="border-radius: 8px; width: 300px; height: 400px;"/>
   </div>
 </div>
-
-<script>
-  function handleResize() {
-    const container = document.querySelector('.content-container');
-    const gifWrapper = document.querySelector('.gif-wrapper');
-    
-    if (window.innerWidth <= 768) {
-      container.appendChild(gifWrapper);
-    }
-  }
-
-  // Initial check
-  handleResize();
-
-  // Listen for window resize
-  window.addEventListener('resize', handleResize);
-</script>
 {{ end }}
