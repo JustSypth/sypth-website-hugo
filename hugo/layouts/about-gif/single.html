@@ -21,8 +21,11 @@
   }
 </style>
 
+<div class="text-center content-container flex flex-row justify-center items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 60px; padding-right: 60px;">
+  <h1 class="mb-4 text-4xl font-extrabold text-slate-700 dark:text-slate-200">About me</h1>
+</div>
 
-<div class="content-container flex flex-row justify-between items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 60px; padding-right: 60px;">
+<div class="content-container flex flex-row justify-between items-start max-w-screen-lg mx-auto mt-8" style="padding-left: 60px; padding-right: 60px;">  
   <!-- Left content section -->
   <div style="max-width: 500px;" class="flex flex-col items-start">
     {{ with .Params.jobTitle }}
@@ -34,7 +37,6 @@
     <div class="justify-left mx-auto mt-8 flex max-w-screen-lg">
       <article>
         {{ if .Params.bio }}
-          <h1 class="mb-4 text-4xl font-extrabold text-slate-700 dark:text-slate-200">About me</h1>
           <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
             {{ .Content }}
           </span>

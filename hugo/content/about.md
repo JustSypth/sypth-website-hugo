@@ -18,3 +18,5 @@ bio: true
 - **Cats are kool**
 
 **I recently started learning html/css/js which is the result of this website. So far it's fun.**
+
+**I recently got a new laptop which altough it has much slower cpu, it's pretty much better in anything else.**
