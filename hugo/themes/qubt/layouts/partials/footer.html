@@ -20,35 +20,39 @@
 </div>
 
 <script>
-  let jsonData; 
-  fetch("/date.json")
-    .then(response => response.json())
-    .then(data => { 
-      jsonData = data; 
-      
-      // Convert the date string to a Date object, using Slovakia timezone for both times
-      const lastUpdated = new Date(jsonData.date);
-      const now = new Date().toLocaleString('en-US', { timeZone: 'Europe/Bratislava' });
+  function whenUpdated() {
+      let jsonData;
+      fetch("/date.json")
+      .then(response => response.json())
+      .then(data => { 
+        console.log("RAN")
+        jsonData = data; 
+        const lastUpdated = new Date(jsonData.date);
+        const now = new Date().toLocaleString('en-US', { timeZone: 'Europe/Bratislava' });
 
-      // Convert the current time back to a Date object for calculations
-      const nowDate = new Date(now);
-      
-      const diffInSeconds = Math.floor((nowDate - lastUpdated) / 1000); // Difference in seconds
-      let timeAgo = '';
+        const nowDate = new Date(now);
+        
+        const diffInSeconds = Math.floor((nowDate - lastUpdated) / 1000); // Difference in seconds
+        let timeAgo = '';
 
-      if (diffInSeconds < 60) {
-        timeAgo = `${diffInSeconds} seconds ago`;
-      } else if (diffInSeconds < 3600) {
-        const minutes = Math.floor(diffInSeconds / 60);
-        timeAgo = `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
-      } else if (diffInSeconds < 86400) {
-        const hours = Math.floor(diffInSeconds / 3600);
-        timeAgo = `${hours} hour${hours > 1 ? 's' : ''} ago`;
-      } else {
-        const days = Math.floor(diffInSeconds / 86400);
-        timeAgo = `${days} day${days > 1 ? 's' : ''} ago`;
-      }
-      
-      document.getElementById("since-updated").innerText = `${timeAgo}`;
-    });
+        if (diffInSeconds < 60) {
+          timeAgo = `${diffInSeconds} seconds ago`;
+        } else if (diffInSeconds < 3600) {
+          const minutes = Math.floor(diffInSeconds / 60);
+          timeAgo = `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+        } else if (diffInSeconds < 86400) {
+          const hours = Math.floor(diffInSeconds / 3600);
+          timeAgo = `${hours} hour${hours > 1 ? 's' : ''} ago`;
+        } else {
+          const days = Math.floor(diffInSeconds / 86400);
+          timeAgo = `${days} day${days > 1 ? 's' : ''} ago`;
+        }
+        
+        document.getElementById("since-updated").innerText = `${timeAgo}`;
+
+        setTimeout(whenUpdated, 1000);
+      });
+  }
+
+  whenUpdated();
 </script>
