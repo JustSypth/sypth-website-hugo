@@ -17,4 +17,4 @@ bio: true
 - **I'm neurodivergent (adhd)**
 - **Cats are kool**
 
-**First laptop: [rice1](/rice-video) | Second laptop: [rice2](/rice-video-win7)**
+**First laptop: [rice1](/rice-video) | Second laptop (outdated): [rice2](/rice-video-win7)**
