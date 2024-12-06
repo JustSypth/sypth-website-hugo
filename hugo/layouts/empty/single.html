@@ -6,7 +6,8 @@
   {{ $toc := .Params.toc | default false }}
 
 
-  <div class="justify-left mx-auto mt-2 flex max-w-screen-md px-4" style="text-align: center;">
+  <!-- max-w-screen-md -->
+  <div class="justify-center mt-4 flex px-4" style="text-align: center;">
     <article>
       <h1 style="font-size: 48px;" class="font-extrabold text-slate-700 dark:text-slate-200">
         {{ .Title | emojify }}
@@ -60,7 +61,7 @@
         </aside>
       {{ end }}
 
-      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
+      <span class="break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
         {{ .Content }}
       </span>
     </article>

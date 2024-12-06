@@ -6,14 +6,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1%;
-    width: 90%;
+    gap: 2%;
+    /* width: 820px; */   
     max-width: 1200px;
+    padding-top: 50px; padding-bottom: 50px;
+    padding-left: 8%; padding-right: 8%;
   }
 
   .image-gallery li {
-    flex: 0 0 19%;
-    margin-bottom: -62px;
+    flex: 0 0 14%;
+    margin-bottom: 16px;
   }
 
   .image-gallery li a {
@@ -36,7 +38,7 @@
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px;
+    border-radius: 8px;
     object-fit: cover;
     aspect-ratio: 1;
   }
@@ -65,22 +67,37 @@
 
   /* Media Queries for Responsive Design */
   @media screen and (max-width: 1024px) {
+    .image-gallery {
+      gap: 2%;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    .image-gallery li {
+      flex: 0 0 14%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-gallery {
+      gap: 2%;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
     .image-gallery li {
       flex: 0 0 24%;
     }
   }
 
-  @media screen and (max-width: 768px) {
-    .image-gallery li {
-      flex: 0 0 32%;
-    }
-  }
-
   @media screen and (max-width: 480px) {
     .image-gallery {
-      gap: 2%;
+      gap: 3%;
+      padding-left: 12%;
+      padding-right: 12%;
     }
-    
+
+
     .image-gallery li {
       flex: 0 0 48%;
     }
@@ -97,7 +114,7 @@
 </div>
 
 {{ $dir := string (.Get "gallery_dir") }}
-<ul style="padding-bottom: 50px;" class="image-gallery">
+<ul class="image-gallery">
   {{ range (readDir (print "/assets" $dir)) }}
     {{- $image := resources.Get (printf "%s/%s" $dir .Name) -}}
     {{- $imageurl := printf "%s/%s" $dir .Name -}}
