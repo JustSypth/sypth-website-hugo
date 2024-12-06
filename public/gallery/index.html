@@ -156,7 +156,8 @@
   
 
 
-  <div class="justify-left mx-auto mt-2 flex max-w-screen-md px-4" style="text-align: center;">
+  
+  <div class="justify-center mt-4 flex px-4" style="text-align: center;">
     <article>
       <h1 style="font-size: 48px;" class="font-extrabold text-slate-700 dark:text-slate-200">
         Cats
@@ -169,7 +170,7 @@
 
       
 
-      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
+      <span class="break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
         <style>
   .image-gallery {
     margin: 0 auto !important;
@@ -178,14 +179,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1%;
-    width: 90%;
+    gap: 2%;
+        
     max-width: 1200px;
+    padding-top: 50px; padding-bottom: 50px;
+    padding-left: 8%; padding-right: 8%;
   }
 
   .image-gallery li {
-    flex: 0 0 19%;
-    margin-bottom: -62px;
+    flex: 0 0 14%;
+    margin-bottom: 16px;
   }
 
   .image-gallery li a {
@@ -208,7 +211,7 @@
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px;
+    border-radius: 8px;
     object-fit: cover;
     aspect-ratio: 1;
   }
@@ -237,22 +240,37 @@
 
    
   @media screen and (max-width: 1024px) {
+    .image-gallery {
+      gap: 2%;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    .image-gallery li {
+      flex: 0 0 14%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-gallery {
+      gap: 2%;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
     .image-gallery li {
       flex: 0 0 24%;
     }
   }
 
-  @media screen and (max-width: 768px) {
-    .image-gallery li {
-      flex: 0 0 32%;
-    }
-  }
-
   @media screen and (max-width: 480px) {
     .image-gallery {
-      gap: 2%;
+      gap: 3%;
+      padding-left: 12%;
+      padding-right: 12%;
     }
-    
+
+
     .image-gallery li {
       flex: 0 0 48%;
     }
@@ -269,7 +287,7 @@
 </div>
 
 
-<ul style="padding-bottom: 50px;" class="image-gallery">
+<ul class="image-gallery">
   <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/0f19eb578f07aa89d9021301f5e4ae3e.jpg')">
         <img src="https://sypth.xyz/album/0f19eb578f07aa89d9021301f5e4ae3e_hu3651834a6e435a7e88789cc58ce9654e_82880_300x300_fill_q50_box_smart1.jpg">
@@ -341,6 +359,11 @@
       </a>
     </li>
   <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/20241206_114338.jpg')">
+        <img src="https://sypth.xyz/album/20241206_114338_hu939b8cb609a6fcc17bfb3853a1e72ce4_18136_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/20b058158b12416e6d9c5ee953992b36.jpg')">
         <img src="https://sypth.xyz/album/20b058158b12416e6d9c5ee953992b36_hu17cb9cbfa461dccf8138662e8ebe027f_63861_300x300_fill_q50_box_smart1.jpg">
       </a>
@@ -361,8 +384,8 @@
       </a>
     </li>
   <li>
-      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/2fd7d3aeca922c311d228d9e154c15a8.jpg')">
-        <img src="https://sypth.xyz/album/2fd7d3aeca922c311d228d9e154c15a8_huad715d585fcd114ed1ae4df8a092287a_32764_300x300_fill_q50_box_smart1.jpg">
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/2573364264d6c48933fb8c55ea2a2bb9.jpg')">
+        <img src="https://sypth.xyz/album/2573364264d6c48933fb8c55ea2a2bb9_hu368c87b812b01a44d99869129519f959_58813_300x300_fill_q50_box_smart1.jpg">
       </a>
     </li>
   <li>
@@ -373,6 +396,11 @@
   <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/443565e959fa3994f3c37480f1043bfc.jpg')">
         <img src="https://sypth.xyz/album/443565e959fa3994f3c37480f1043bfc_hu223ff79abe741a5c47cb793f55de9b6d_104143_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/4831ad9bfa319bb41a0599c0e930b46b.jpg')">
+        <img src="https://sypth.xyz/album/4831ad9bfa319bb41a0599c0e930b46b_hufbd93d2d353f8aa7339c705d8bb3f6b8_48888_300x300_fill_q50_box_smart1.jpg">
       </a>
     </li>
   <li>
@@ -421,6 +449,11 @@
       </a>
     </li>
   <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/68880e223d092e7227ff2068d58e7881.jpg')">
+        <img src="https://sypth.xyz/album/68880e223d092e7227ff2068d58e7881_hufa957fff34c0e334cf63120a2f00738b_75259_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/69470117d0d5205ce8795fbdb421b37c.jpg')">
         <img src="https://sypth.xyz/album/69470117d0d5205ce8795fbdb421b37c_hud723b6b7935d8729089d488858ab5ac6_39434_300x300_fill_q50_box_smart1.jpg">
       </a>
@@ -441,8 +474,23 @@
       </a>
     </li>
   <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/908614331736ad44edd17300c364fe88.jpg')">
+        <img src="https://sypth.xyz/album/908614331736ad44edd17300c364fe88_hu24f953a6826e506a1b98f7d6e08cba84_107380_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/99fc68e4107aab1774714b49255ced4f.jpg')">
         <img src="https://sypth.xyz/album/99fc68e4107aab1774714b49255ced4f_hu2652c7ad27314f7170f975439169d0f3_41440_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/9b37d3ca11e9570e6bee8b78524dd607.jpg')">
+        <img src="https://sypth.xyz/album/9b37d3ca11e9570e6bee8b78524dd607_hue55c18192acde192b504f682df3ba469_29509_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/9dca38c0d68c210335fa386257d693ef.jpg')">
+        <img src="https://sypth.xyz/album/9dca38c0d68c210335fa386257d693ef_hu2085069875db0dc610a2f46348141a58_34359_300x300_fill_q50_box_smart1.jpg">
       </a>
     </li>
   <li>
@@ -581,6 +629,11 @@
       </a>
     </li>
   <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/d2142a57479e0ea9aad61f20c13f2f7c.jpg')">
+        <img src="https://sypth.xyz/album/d2142a57479e0ea9aad61f20c13f2f7c_hu4f4c431592cc3f4e6374eb9ddc1b953d_80437_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/d296c1dc50eb9a1f14771cf56cbb4521.jpg')">
         <img src="https://sypth.xyz/album/d296c1dc50eb9a1f14771cf56cbb4521_hu4935a01376dc378a44ab2f2b27cf61a4_61873_300x300_fill_q50_box_smart1.jpg">
       </a>
@@ -593,6 +646,11 @@
   <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/e188f894a01892cfe46245d7a237736d.jpg')">
         <img src="https://sypth.xyz/album/e188f894a01892cfe46245d7a237736d_hu37226789a110e2903b0ad29c677cf3b3_73217_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/e18f1a81692206080b4b1fc8abfafd4c.jpg')">
+        <img src="https://sypth.xyz/album/e18f1a81692206080b4b1fc8abfafd4c_hu7fc2b07ccbe0769713d004a0fe04b585_61340_300x300_fill_q50_box_smart1.jpg">
       </a>
     </li>
   <li>
@@ -618,6 +676,11 @@
   <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/eab79371b86f94fdbd6a29c4404932ee.jpg')">
         <img src="https://sypth.xyz/album/eab79371b86f94fdbd6a29c4404932ee_huda0336f97226873e04f06202b84dde93_52191_300x300_fill_q50_box_smart1.jpg">
+      </a>
+    </li>
+  <li>
+      <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/f1f6668a5c6a156baea666b4302035d0.jpg')">
+        <img src="https://sypth.xyz/album/f1f6668a5c6a156baea666b4302035d0_hu64751c8b9b89c6df08d077a858bb6051_56911_300x300_fill_q50_box_smart1.jpg">
       </a>
     </li>
   <li>
