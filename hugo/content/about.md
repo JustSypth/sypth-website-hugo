@@ -13,7 +13,7 @@ bio: true
 - **My age:** 16
 - **Country:** Slovakia
 - **Linux distro I'm currently using:** Fedora 41
-- **Languages I know:** Lua, Python, C#, Html/Css/Js
+- **Languages I know:** Lua, Python, C#, Html/Css/Js, Rust (beginner)
 - **I'm neurodivergent (adhd)**
 - **Cats are kool**
 
