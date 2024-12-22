@@ -16,5 +16,3 @@ bio: true
 - **Languages I know:** Lua, Python, C#, Html/Css/Js, Rust (beginner)
 - **I'm neurodivergent (adhd)**
 - **Cats are kool**
-
-**First laptop: [rice1](/rice-video) | Second laptop (updated): [rice2](/rice-video2)**
