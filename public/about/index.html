@@ -235,7 +235,6 @@
       fetch("/date.json")
       .then(response => response.json())
       .then(data => { 
-        console.log("RAN")
         jsonData = data; 
         const lastUpdated = new Date(jsonData.date);
         const now = new Date().toLocaleString('en-US', { timeZone: 'Europe/Bratislava' });

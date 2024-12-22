@@ -282,12 +282,12 @@
   }
 </style>
 
-<div class="image-overlay" id="imageOverlay">
+<div class="image-overlay noselect" id="imageOverlay">
   <img id="overlayImage" src="" alt="Full Size Image Preview">
 </div>
 
 
-<ul class="image-gallery">
+<ul class="image-gallery noselect">
   <li>
       <a href="javascript:void(0)" onclick="showImageOverlay('\/album\/0f19eb578f07aa89d9021301f5e4ae3e.jpg')">
         <img src="https://sypth.xyz/album/0f19eb578f07aa89d9021301f5e4ae3e_hu3651834a6e435a7e88789cc58ce9654e_82880_300x300_fill_q50_box_smart1.jpg">
@@ -727,6 +727,8 @@
   });
 </script>
 
+<script src="/js/secret.js"></script>
+
       </span>
     </article>
   </div>
@@ -755,7 +757,6 @@
       fetch("/date.json")
       .then(response => response.json())
       .then(data => { 
-        console.log("RAN")
         jsonData = data; 
         const lastUpdated = new Date(jsonData.date);
         const now = new Date().toLocaleString('en-US', { timeZone: 'Europe/Bratislava' });
