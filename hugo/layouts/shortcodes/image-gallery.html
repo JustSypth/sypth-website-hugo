@@ -109,12 +109,12 @@
   }
 </style>
 
-<div class="image-overlay" id="imageOverlay">
+<div class="image-overlay noselect" id="imageOverlay">
   <img id="overlayImage" src="" alt="Full Size Image Preview">
 </div>
 
 {{ $dir := string (.Get "gallery_dir") }}
-<ul class="image-gallery">
+<ul class="image-gallery noselect">
   {{ range (readDir (print "/assets" $dir)) }}
     {{- $image := resources.Get (printf "%s/%s" $dir .Name) -}}
     {{- $imageurl := printf "%s/%s" $dir .Name -}}
@@ -142,3 +142,5 @@
     }
   });
 </script>
+
+<script src="{{ "js/secret.js" | relURL }}"></script>
