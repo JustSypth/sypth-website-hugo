@@ -1,5 +1,5 @@
 ---
 type: easteregg
 
-width: "360"
+width: "768"
 ---
