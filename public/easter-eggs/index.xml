@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Easter-Eggs on Sypth&#39;s Website</title>
-    <link>https://sypth.xyz/easter-eggs/</link>
+    <link>http://localhost:1313/easter-eggs/</link>
     <description>Recent content in Easter-Eggs on Sypth&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://sypth.xyz/easter-eggs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/easter-eggs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://sypth.xyz/easter-eggs/cma3qb/</link>
+      <link>http://localhost:1313/easter-eggs/cma3qb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sypth.xyz/easter-eggs/cma3qb/</guid>
+      <guid>http://localhost:1313/easter-eggs/cma3qb/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://sypth.xyz/easter-eggs/mhzt1b/</link>
+      <link>http://localhost:1313/easter-eggs/mhzt1b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sypth.xyz/easter-eggs/mhzt1b/</guid>
+      <guid>http://localhost:1313/easter-eggs/mhzt1b/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://sypth.xyz/easter-eggs/ml08xo/</link>
+      <link>http://localhost:1313/easter-eggs/ml08xo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sypth.xyz/easter-eggs/ml08xo/</guid>
+      <guid>http://localhost:1313/easter-eggs/ml08xo/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://sypth.xyz/easter-eggs/ti4o7z/</link>
+      <link>http://localhost:1313/easter-eggs/ti4o7z/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sypth.xyz/easter-eggs/ti4o7z/</guid>
+      <guid>http://localhost:1313/easter-eggs/ti4o7z/</guid>
       <description></description>
     </item>
   </channel>
