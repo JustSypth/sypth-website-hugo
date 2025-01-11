@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sypth&#39;s Website</title>
+    <title>sypth.xyz</title>
     <link>https://sypth.xyz/</link>
-    <description>Recent content on Sypth&#39;s Website</description>
+    <description>Recent content on sypth.xyz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://sypth.xyz/index.xml" rel="self" type="application/rss+xml" />
