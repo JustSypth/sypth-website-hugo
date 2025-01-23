@@ -14,5 +14,5 @@ bio: true
 - **Country:** Slovakia
 - **Linux distro I'm currently using:** Fedora 41
 - **Languages I know:** Lua, Python, C#, Rust (beginner)
-- **I'm neurodivergent (adhd)**
+- **I'm neurodivergent (adhd, ocd)**
 - **Cats are kool**
