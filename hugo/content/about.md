@@ -12,6 +12,7 @@ bio: true
 
 - **My age:** 16
 - **Country:** Slovakia
+- **Studying at IT department high school**
 - **Linux distro I'm currently using:** Fedora 41
 - **Languages I know:** Lua, Python, C#, Rust (beginner)
 - **I'm neurodivergent (adhd, ocd)**
