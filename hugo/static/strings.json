@@ -1,12 +1,11 @@
 [
-    "let greeting: String = String::from(\"hello\")",
+    "let greeting: String = String::from(\"hello\");",
     "nano main.rs",
     "fn main()",
     "flatpak update",
     "chesburger",
-    "linux is cool ^500i think",
     "idk what to put here anymore",
-    "totally garnular!",
+    "yes",
     "potato",
     "cargo new",
     "when the",
@@ -17,5 +16,5 @@
     "sudo dnf update",
     "fastfetch",
     "btop",
-    "i started learning rust"
+    "rust is a really cool language"
 ]
