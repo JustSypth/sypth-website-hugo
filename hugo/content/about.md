@@ -10,9 +10,9 @@ gif: "cat.gif"
 bio: true
 ---
 
-**My age:** 16  
+**Gender:** He/Him  
 **Country:** Slovakia  
-**Studying at IT department high school**  
-**Linux distro I'm currently using:** Fedora  
+**Studying at high school which is teaching electrotechnology and computer related things**  
 **Languages I know:** Lua*u*, Python, C#, Rust (beginner)  
 **I'm neurodivergent (adhd, ocd)**  
+**Cats are silly**
