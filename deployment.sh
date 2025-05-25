@@ -10,7 +10,7 @@ JSON_FILE="public/date.json"
 CURRENT_DATE=$(TZ="Europe/Bratislava" date +"%Y-%m-%dT%H:%M")
 jq --arg new_date "$CURRENT_DATE" '.date = $new_date' "$JSON_FILE" > tmp.$$.json && mv tmp.$$.json "$JSON_FILE"
 
-rm -fr /var/www
+rm -fr /var/www/sypth
 cp -r public /var/www/sypth/
 systemctl restart apache2
 
